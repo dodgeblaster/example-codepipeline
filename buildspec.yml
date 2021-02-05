@@ -27,7 +27,7 @@ phases:
     build:
         commands:
             - echo "Build and deploy phase"
-            - sls deploy --stage=$STAGE
+            - sls deploy --stage=$STAGE --region=us-east-2
     post_build:
         commands:
             - echo "Post-build phase"
